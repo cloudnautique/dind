@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:14.04.1
 MAINTAINER jerome.petazzoni@docker.com
 
 # Let's start with some basic stuff.
@@ -21,4 +21,3 @@ RUN chmod +x /usr/local/bin/wrapdocker
 # Define additional metadata for our image.
 VOLUME /var/lib/docker
 CMD ["wrapdocker"]
-
